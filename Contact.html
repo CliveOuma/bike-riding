@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e3184012e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      p {
+        font-size: 20px;
+        font-family: graphik;
+        color: black;
+      }
+
+      body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background: linear-gradient(
+          90deg,
+          rgba(16, 209, 147, 1) 0%,
+          rgba(21, 209, 16, 0.8085609243697479) 50%,
+          rgba(16, 209, 147, 1) 100%
+        );
+        animation: gradient 20s ease infinite;
+        width: 100%;
+        height: 100%;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+      .middle-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin-bottom: 3rem;
+      }
+      .middle-section h1 {
+        margin-bottom: 0px;
+        font-size: 50px;
+      }
+      .middle-section p {
+        text-align: center;
+      }
+
+      /* .main {
+  width: 50%;
+  color: black;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+} */
+      .table-wrapper {
+        margin: 10px 20px 20px;
+        box-shadow: 4px 4px 60px 20px rgba(34, 167, 240, 1);
+      }
+      .fl-table {
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: normal;
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        background-color: white;
+      }
+
+      .fl-table td,
+      .fl-table th {
+        text-align: center;
+        padding: 8px;
+      }
+      .fl-table td {
+        border-right: 1px solid #f8f8f8;
+        font-size: 18px;
+        color: black;
+      }
+      .fl-table thead th {
+        color: #ffffff;
+        background: #4fc3a1;
+      }
+      .fl-table thead th:nth-child(odd) {
+        color: #ffffff;
+        background: #324960;
+      }
+      .fl-table tr:nth-child(even) {
+        background: #f8f8f8;
+      }
+      .icons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <section>
+      <div class="nav-bar">
+        <nav>
+          <h1 class="logo">
+            <b>Harrow Council</b>
+          </h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Explore.html">Ride</a></li>
+            <li><a href="Sign_up_Form.html">Sign up</a></li>
+            <li><a href="Contribute.html">contribute</a></li>
+            <li><a href="AboutPage.html">about</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- End of Navigation bar -->
+    <div class="header">
+      <div class="middle-section">
+        <h1><strong>GET IN TOUCH!</strong></h1>
+        <p>
+          If you have any questions, please feel to visit us in our offices
+          distributed throughout the borough. See the table below for further
+          details:
+        </p>
+      </div>
+      <div class="table-wrapper">
+        <table class="fl-table">
+          <thead>
+            <tr>
+              <th>Address</th>
+              <th>Opening Times</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 Harrow Road, HA2 632</td>
+              <td>9am - 5pm</td>
+              <td>HQ1@harrow.com</td>
+              <td>07928374625</td>
+            </tr>
+            <tr>
+              <td>34 Pinner Block, PN1 8WE</td>
+              <td>9am - 6pm</td>
+              <td>HQ2@harrow.com</td>
+              <td>07839462738</td>
+            </tr>
+            <tr>
+              <td>90 Christ Road, CR6 2HI</td>
+              <td>9am-4:30pm</td>
+              <td>HQ3@harrow.com</td>
+              <td>07283749563</td>
+            </tr>
+            <tr>
+              <td>18 Harley Crescent, HA4 2XH</td>
+              <td>10am - 5pm</td>
+              <td>HQ4@harrow.com</td>
+              <td>07293748592</td>
+            </tr>
+            <tr>
+              <td>23 Marsh Road, WD2 3PD</td>
+              <td>11am-8pm</td>
+              <td>HQ5@harrow.com</td>
+              <td>07353748394</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="icons-container">
+        <p>
+          <i
+            class="fas fa-envelope"
+            style="font-size: 45px; margin-right: 6rem"
+          >
+            EMAIL</i
+          >
+        </p>
+        <p>
+          <i class="fas fa-phone" style="font-size: 45px; margin-right: 6rem">
+            PHONE</i
+          >
+        </p>
+        <p>
+          <i class="fa fa-walking" style="font-size: 45px"> WALK</i>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
