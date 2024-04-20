@@ -19,22 +19,14 @@
         }
 
         body {
-            /*background: linear-gradient(Odeg, rgba(87,180,123,1) 0%, rgba(87,180,123,1) 56%); */
             background-image: url(Images/ride.jpg);
             /* https://unsplash.com/photos/VfUND4Uy40 */
             background-size: cover;
-            align-content: center;
-            justify-content: center;
-            background-size: cover;
             background-position: center;
-            position: relative;
-            z-index: 1;
+            background-repeat: no-repeat;
+            animation: gradient 20s ease infinite;
             width: 100%;
             height: 100%;
-            margin: 0;
-            /* Remove margin */
-            padding: 0;
-            /* Remove padding */
         }
 
 
@@ -110,6 +102,7 @@
 
         .left-column {
             flex: 0 0 48%;
+            height: 300px;
             margin-bottom: 20px;
             margin-right: 2%;
             /* Add margin to the right */
@@ -135,7 +128,7 @@
 
         .wrapper .item {
             width: 450px;
-            height: 380px;
+            height: 400px;
             margin: 10px;
             background-color: ghostwhite;
             border-radius: 5px;
@@ -240,7 +233,7 @@
 
 <body>
     <!-- Navigation bar -->
-    <section>
+    <section id="explore">
         <div class="nav-bar">
             <nav>
                 <h1 class="logo">
@@ -270,7 +263,7 @@
                 <div class="map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb11m18!1m12:1m3!1d79318.4714571656812d-0.4031427438773469413d51.5920205083182312m311f012f013f0!3m2!11102412176814f13.113n311m2!1s0x48761158a02507f9%3A0x24d74f8999e25bd9:2sHarrow!5e0!3m2!1sen!2suk:4v161399199231215m2!1sen!2suk"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" ></iframe>
+                        width="100%" height="450" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
 
