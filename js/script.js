@@ -1,3 +1,17 @@
+// navbar small screens
+document.querySelector('.hamburger').addEventListener('click', function() {
+   var navLinks = document.querySelector('.nav__link');
+   if (navLinks.classList.contains('show')) {
+     navLinks.classList.remove('show');
+     navLinks.classList.add('hide');
+   } else {
+     navLinks.classList.remove('hide');
+     navLinks.classList.add('show');
+   }
+ });
+ 
+
+
 let onSlide = false;
 
 window.addEventListener("load", () => {

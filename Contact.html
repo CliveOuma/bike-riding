@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
     <script
@@ -45,7 +47,7 @@
         }
       }
 
-      .header {
+      .header-action {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -122,100 +124,123 @@
         margin-top: 6rem;
         margin-bottom: 5rem;
       }
+      @media screen and (max-width: 900px) {
+        .fl-table {
+          white-space: wrap;
+        }
+        .icons-container {
+          flex-direction: column;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.5rem;
+        }
+        .middle-section h1 {
+          text-align: center;
+          font-size: 30px;
+        }
+      }
     </style>
   </head>
   <body>
-    <!-- Navigation bar -->
-    <section>
-      <div class="nav-bar">
-        <nav>
-          <h1 class="logo">
-            <b>Harrow Council</b>
-          </h1>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Explore.html">Ride</a></li>
-            <li><a href="Sign_up_Form.html">Sign up</a></li>
-            <li><a href="Contribute.html">contribute</a></li>
-            <li><a href="AboutPage.html">about</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- End of Navigation bar -->
-    <div class="header">
-      <div class="middle-section">
-        <h1><strong>GET IN TOUCH!</strong></h1>
-        <p>
-          If you have any questions, please feel to visit us in our offices
-          distributed throughout the borough. See the table below for further
-          details:
-        </p>
-      </div>
-      <div class="table-wrapper">
-        <table class="fl-table">
-          <thead>
-            <tr>
-              <th>Address</th>
-              <th>Opening Times</th>
-              <th>Email</th>
-              <th>Phone Number</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>10 Harrow Road, HA2 632</td>
-              <td>9am - 5pm</td>
-              <td>HQ1@harrow.com</td>
-              <td>07928374625</td>
-            </tr>
-            <tr>
-              <td>34 Pinner Block, PN1 8WE</td>
-              <td>9am - 6pm</td>
-              <td>HQ2@harrow.com</td>
-              <td>07839462738</td>
-            </tr>
-            <tr>
-              <td>90 Christ Road, CR6 2HI</td>
-              <td>9am-4:30pm</td>
-              <td>HQ3@harrow.com</td>
-              <td>07283749563</td>
-            </tr>
-            <tr>
-              <td>18 Harley Crescent, HA4 2XH</td>
-              <td>10am - 5pm</td>
-              <td>HQ4@harrow.com</td>
-              <td>07293748592</td>
-            </tr>
-            <tr>
-              <td>23 Marsh Road, WD2 3PD</td>
-              <td>11am-8pm</td>
-              <td>HQ5@harrow.com</td>
-              <td>07353748394</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="container-body">
+      <!-- Navigation bar -->
+      <section id="header">
+        <div class="nav-bar">
+          <nav>
+            <a href="Home.html" class="logo"><b>Harrow Council</b></a>
 
-      <div class="icons-container">
-        <p>
-          <i
-            class="fas fa-envelope"
-            style="font-size: 45px; margin-right: 6rem"
-          >
-            EMAIL</i
-          >
-        </p>
-        <p>
-          <i class="fas fa-phone" style="font-size: 45px; margin-right: 6rem">
-            PHONE</i
-          >
-        </p>
-        <p>
-          <i class="fa fa-walking" style="font-size: 45px"> WALK</i>
-        </p>
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+
+            <ul class="nav__link hide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Explore.html">Ride</a></li>
+              <li><a href="Sign_up_Form.html">Sign up</a></li>
+              <li><a href="Contribute.html">contribute</a></li>
+              <li><a href="AboutPage.html">about</a></li>
+              <li class="last-list"><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- End of Navigation bar -->
+      <div class="header-action">
+        <div class="middle-section">
+          <h1><strong>GET IN TOUCH!</strong></h1>
+          <p>
+            If you have any questions, please feel to visit us in our offices
+            distributed throughout the borough. See the table below for further
+            details:
+          </p>
+        </div>
+        <div class="table-wrapper">
+          <table class="fl-table">
+            <thead>
+              <tr>
+                <th>Address</th>
+                <th>Opening Times</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10 Harrow Road, HA2 632</td>
+                <td>9am - 5pm</td>
+                <td>HQ1@harrow.com</td>
+                <td>07928374625</td>
+              </tr>
+              <tr>
+                <td>34 Pinner Block, PN1 8WE</td>
+                <td>9am - 6pm</td>
+                <td>HQ2@harrow.com</td>
+                <td>07839462738</td>
+              </tr>
+              <tr>
+                <td>90 Christ Road, CR6 2HI</td>
+                <td>9am-4:30pm</td>
+                <td>HQ3@harrow.com</td>
+                <td>07283749563</td>
+              </tr>
+              <tr>
+                <td>18 Harley Crescent, HA4 2XH</td>
+                <td>10am - 5pm</td>
+                <td>HQ4@harrow.com</td>
+                <td>07293748592</td>
+              </tr>
+              <tr>
+                <td>23 Marsh Road, WD2 3PD</td>
+                <td>11am-8pm</td>
+                <td>HQ5@harrow.com</td>
+                <td>07353748394</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="icons-container">
+          <p>
+            <i
+              class="fas fa-envelope"
+              style="font-size: 45px; margin-right: 6rem"
+            >
+              EMAIL</i
+            >
+          </p>
+          <p>
+            <i class="fas fa-phone" style="font-size: 45px; margin-right: 6rem">
+              PHONE</i
+            >
+          </p>
+          <p>
+            <i class="fa fa-walking" style="font-size: 45px"> WALK</i>
+          </p>
+        </div>
       </div>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

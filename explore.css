@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+  font-family: "Graphik", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+.container-body {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+.bg-image {
+  /*background: linear-gradient(Odeg, rgba(87,180,123,1) 0%, rgba(87,180,123,1) 56%); */
+  background-image: url(Images/ride.jpg);
+  /* https://unsplash.com/photos/VfUND4Uy40 */
+  background-size: cover;
+  /* align-content: center; */
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.header-ride {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+
+.middle-section h1 {
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+
+.middle-section p {
+  text-align: center;
+}
+
+.container-ride {
+  /* min-height: 50vh; */
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bike-price {
+  width: 60%;
+  height: 50%;
+  margin: 10px auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -8%;
+  margin-left: 10px;
+}
+
+.left-column {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+  margin-right: 2%;
+  /* Add margin to the right */
+}
+
+.right-column {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  /* Add margin to the left */
+}
+
+.wrapper {
+  align-content: center;
+  float: right;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .item {
+  width: 450px;
+  height: 380px;
+  margin: 10px;
+  background-color: ghostwhite;
+  border-radius: 5px;
+  border: 1px solid lightblue;
+  position: relative;
+  padding: 30px 20px 65px;
+  box-shadow: blue;
+}
+
+.wrapper .item h3 {
+  letter-spacing: 2px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.wrapper .bike_info p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.wrapper .bike_button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: lightskyblue;
+  margin-bottom: 10px;
+}
+
+.wrapper .bike_button a {
+  display: block;
+  color: #fff;
+}
+
+.profilesteps {
+  float: right;
+  margin: 20px 20px 0;
+  margin-top: 35;
+  margin-right: 22%;
+}
+
+.profileStep {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 0px;
+}
+
+.profilestep .connect {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 200px;
+  height: 15px;
+  margin-left: -5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.profileStep icon {
+  position: absolute;
+  top: -8;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #244;
+  -webkit-border-radius: 5px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 25px;
+  line-height: 0px;
+  text-align: center;
+}
+
+.profilestep.info {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 105px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.profileStepPassive .connect {
+  background-color: rsrsrs;
+}
+
+.profileStepPassive.icon {
+  background-color: gray;
+  color: blue;
+}
+/* Navbar */
+nav {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto; /* Centering the nav */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.hamburger {
+  display: none;
+}
+.logo {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 0;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 2rem; /* Added margin for spacing between nav items */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: green;
+}
+/* small screens for navbar */
+@media (max-width: 900px) {
+  .hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  .show {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav {
+    position: relative;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    right: -5%;
+    top: 100%;
+    background: green;
+    z-index: 1000;
+    border-radius: 7px;
+  }
+  nav ul li {
+    padding: 1rem;
+    padding-bottom: 0px;
+  }
+  .last-list {
+    padding-bottom: 1rem;
+  }
+  .container-ride {
+    flex-direction: column;
+    margin: unset;
+    gap: 2rem;
+  }
+  .right-column,
+  .left-column {
+    width: 100%;
+  }
+  .wrapper{
+    float: unset;
+    margin-top: 1.5rem;
+  }
+  .wrapper .item{
+    width: 100%;
+  }
+}

@@ -1,130 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/82fb063a14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
     <style>
-        .main {
+      .main {
+        background: rgba(0, 0, 0, 0.7);
+      }
+      #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 60px);
+      }
 
-            background: rgba(0, 0, 0, .7);
-        }
+      .about-container {
+        text-align: center;
 
-        
+        /* margin-top: 100px; */
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+      }
 
-        #about {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 60px);
-        }
+      .about-container h1 {
+        margin-top: 0;
+      }
 
-        .about-container {
-            text-align: center;
-           
-            margin-top: 100px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
-        }
+      .about-container p {
+        font-size: 18px;
+        /* Decrease font size of paragraphs */
+        line-height: 1.5;
+        /* Increase line height for better readability */
+      }
 
-        .about-container h1 {
-            margin-top: 0;
-        }
+      .about-container ul {
+        list-style-type: none;
+        /* Remove default bullet points */
+        padding: 0;
+        /* Remove default padding */
+      }
 
-        .about-container p {
-            font-size: 18px;
-            /* Decrease font size of paragraphs */
-            line-height: 1.5;
-            /* Increase line height for better readability */
-        }
+      .about-container ul li {
+        margin-bottom: 10px;
+      }
 
-        .about-container ul {
-            list-style-type: none;
-            /* Remove default bullet points */
-            padding: 0;
-            /* Remove default padding */
-        }
+      .btn {
+        padding: 10px 20px;
+        font-family: "Graphik", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        background: green;
+        /* Set button background color */
+        color: white;
+        /* Set button text color */
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
 
-        .about-container ul li {
-            margin-bottom: 10px;
-
-        }
-
-        .btn {
-            padding: 10px 20px;
-            font-family: 'Graphik', sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            outline: none;
-            background: green;
-            /* Set button background color */
-            color: white;
-            /* Set button text color */
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s ease-in-out;
-        }
-
-        .btn:hover {
-            background: #0a802b;
-            /* Darken button color on hover */
-        }
-        body {
-            background: url(Images/about.avif) no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-        }
-        
+      .btn:hover {
+        background: #0a802b;
+        /* Darken button color on hover */
+      }
+      body {
+        background: url(Images/about.avif) no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <!-- Navigation bar -->
-    <section id="header" class="about">
+  <body>
+    <div class="container-body">
+      <!-- Navigation bar -->
+      <section id="header">
         <div class="nav-bar">
-            <nav>
-                <h1 class="logo"><b>Harrow Council</b></h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Explore.html">Ride</a></li>
-                    <li><a href="Sign_up_Form.html">Sign up</a></li>
-                    <li><a href="Contribute.html">Contribute</a></li>
-                    <li><a href="AboutPage.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li> 
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <!-- End of Navigation bar -->
-    <!-- Main Section-->
-    <section class="header">
-        <div id="about">
-            <div class="about-container">
-                <h1 style="color: white;">About Us</h1>
-                <p style="color: white;">
-                    We are the Harrow Council. Founded 30 years ago by Sir Charles Harrow, we decided
-                    it was time to introduce a new scheme to promote healthy living. This is, Rent-a-Bike.
-                    We have implemented 50 new cycle lanes around the borough and built 20 bicycle shacks
-                    where you can rent a bike for only £2 per hour. Famous fitness icons around the world have stated
-                    that this scheme will bring out the best in people in the borough and people around the country
-                    will travel to ride a bike. We are committed to:
-                </p>
-                <br>
-                <ul style="color: white;">
-                    <li><b>Promote healthy living</b></li>
-                    <li><b>Getting everyone active</b></li>
-                    <li><b>Making sure everyone has fun!</b></li>
-                </ul>
-                <a href="Sign_up_Form.html"><button class="btn">Sign Up <i class="fa fa-book-open"></i></button></a>
-            </div>
-        </div>
-    </section>
-    <!-- End of main section -->
-</body>
+          <nav>
+            <a href="Home.html" class="logo"><b>Harrow Council</b></a>
 
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+
+            <ul class="nav__link hide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Explore.html">Ride</a></li>
+              <li><a href="Sign_up_Form.html">Sign up</a></li>
+              <li><a href="Contribute.html">contribute</a></li>
+              <li><a href="AboutPage.html">about</a></li>
+              <li class="last-list"><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- End of Navigation bar -->
+      <!-- Main Section-->
+      <section class="header">
+        <div id="about">
+          <div class="about-container">
+            <h1 style="color: white">About Us</h1>
+            <p style="color: white">
+              We are the Harrow Council. Founded 30 years ago by Sir Charles
+              Harrow, we decided it was time to introduce a new scheme to
+              promote healthy living. This is, Rent-a-Bike. We have implemented
+              50 new cycle lanes around the borough and built 20 bicycle shacks
+              where you can rent a bike for only £2 per hour. Famous fitness
+              icons around the world have stated that this scheme will bring out
+              the best in people in the borough and people around the country
+              will travel to ride a bike. We are committed to:
+            </p>
+            <br />
+            <ul style="color: white">
+              <li><b>Promote healthy living</b></li>
+              <li><b>Getting everyone active</b></li>
+              <li><b>Making sure everyone has fun!</b></li>
+            </ul>
+            <a href="Sign_up_Form.html"
+              ><button class="btn">
+                Sign Up <i class="fa fa-book-open"></i></button
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- End of main section -->
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

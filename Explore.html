@@ -1,299 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ride Page</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/e3184012e7.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-        }
+    <link rel="stylesheet" href="explore.css" />
+  </head>
 
-        p {
-            font-size: 20px;
-            font-family: graphik;
-            color: black;
-        }
-
-        body {
-            /*background: linear-gradient(Odeg, rgba(87,180,123,1) 0%, rgba(87,180,123,1) 56%); */
-            background-image: url(Images/ride.jpg);
-            /* https://unsplash.com/photos/VfUND4Uy40 */
-            background-size: cover;
-            align-content: center;
-            justify-content: center;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            /* Remove margin */
-            padding: 0;
-            /* Remove padding */
-        }
-
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 3rem;
-        }
-
-        .middle-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 60%;
-            margin-bottom: 3rem;
-        }
-
-        .middle-section h1 {
-            margin-bottom: 0px;
-            font-size: 50px;
-        }
-
-        .middle-section p {
-            text-align: center;
-        }
-
-        .container {
-            background: none;
-            margin-top: 400px;
-            margin-left: 50%;
-            align-content: center;
-        }
-
-        .container {
-            min-height: 50vh;
-            width: 100%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .bike-price {
-            width: 60%;
-            height: 50%;
-            margin: 10px auto;
-        }
-
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: -8%;
-            margin-left: 10px;
-        }
-
-        .left-column {
-            flex: 0 0 48%;
-            margin-bottom: 20px;
-            margin-right: 2%;
-            /* Add margin to the right */
-        }
-
-        .right-column {
-            flex: 0 0 48%;
-            margin-bottom: 20px;
-            margin-left: 2%;
-            /* Add margin to the left */
-        }
-
-
-        .wrapper {
-            align-content: center;
-            float: right;
-            width: auto;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            flex-wrap: wrap;
-        }
-
-        .wrapper .item {
-            width: 450px;
-            height: 380px;
-            margin: 10px;
-            background-color: ghostwhite;
-            border-radius: 5px;
-            border: 1px solid lightblue;
-            position: relative;
-            padding: 30px 20px 65px;
-            box-shadow: blue;
-        }
-
-        .wrapper .item h3 {
-            letter-spacing: 2px;
-            color: black;
-            margin-bottom: 20px;
-        }
-
-        .wrapper .bike_info p {
-            font-size: 20px;
-            color: black;
-            margin-bottom: 5px;
-        }
-
-        .wrapper .bike_button {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 300px;
-            padding: 20px;
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
-            background: lightskyblue;
-            margin-bottom: 10px;
-        }
-
-        .wrapper .bike_button a {
-            display: block;
-            color: #fff;
-        }
-
-
-        .profilesteps {
-            float: right;
-            margin: 20px 20px 0;
-            margin-top: 35;
-            margin-right: 22%;
-        }
-
-        .profileStep {
-            position: relative;
-            float: right;
-            width: 200px;
-            height: 0px;
-        }
-
-        .profilestep .connect {
-            position: absolute;
-            top: 10px;
-            left: 0;
-            width: 200px;
-            height: 15px;
-            margin-left: -5px;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-        }
-
-        .profileStep icon {
-            position: absolute;
-            top: -8;
-            right: 0;
-            width: 50px;
-            height: 50px;
-            background-color: #244;
-            -webkit-border-radius: 5px;
-            border-radius: 15px;
-            color: #fff;
-            font-size: 25px;
-            line-height: 0px;
-            text-align: center;
-        }
-
-        .profilestep.info {
-            position: absolute;
-            bottom: 0;
-            left: 30px;
-            width: 105px;
-            color: #fff;
-            font-size: 20px;
-            line-height: 20px;
-            text-align: center;
-        }
-
-        .profileStepPassive .connect {
-            background-color: rsrsrs;
-        }
-
-        .profileStepPassive.icon {
-            background-color: gray;
-            color: blue;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Navigation bar -->
-    <section>
-        <div class="nav-bar">
+  <body>
+    <section class="bg-image">
+      <div class="container-body">
+        <!-- Navigation bar -->
+        <section id="header">
+          <div class="nav-bar">
             <nav>
-                <h1 class="logo">
-                    <b>Harrow Council</b>
-                </h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Explore.html">Ride</a></li>
-                    <li><a href="Sign_up_Form.html">Sign up</a></li>
-                    <li><a href="Contribute.html">contribute</a></li>
-                    <li><a href="AboutPage.html">about</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <!-- End of Navigation bar -->
-    <div class="header">
-        <div class="middle-section">
-            <h1 style="font-size: 50px; letter-spacing: 2px; text-shadow: 5px 5px Lightgreen;">GET RIDING
-            </h1>
+              <a href="Home.html" class="logo"><b>Harrow Council</b></a>
 
-        </div>
-        <div class="container">
+              <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+
+              <ul class="nav__link hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Explore.html">Ride</a></li>
+                <li><a href="Sign_up_Form.html">Sign up</a></li>
+                <li><a href="Contribute.html">contribute</a></li>
+                <li><a href="AboutPage.html">about</a></li>
+                <li class="last-list"><a href="contact.html">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <!-- End of Navigation bar -->
+
+        <div class="header-ride">
+          <div class="middle-section">
+            <h1
+              style="
+                font-size: 50px;
+                letter-spacing: 2px;
+                text-shadow: 5px 5px Lightgreen;
+              "
+            >
+              GET RIDING
+            </h1>
+          </div>
+          <div class="container-ride">
             <!-- Left Column -->
             <div class="right-column">
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb11m18!1m12:1m3!1d79318.4714571656812d-0.4031427438773469413d51.5920205083182312m311f012f013f0!3m2!11102412176814f13.113n311m2!1s0x48761158a02507f9%3A0x24d74f8999e25bd9:2sHarrow!5e0!3m2!1sen!2suk:4v161399199231215m2!1sen!2suk"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" ></iframe>
-                </div>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb11m18!1m12:1m3!1d79318.4714571656812d-0.4031427438773469413d51.5920205083182312m311f012f013f0!3m2!11102412176814f13.113n311m2!1s0x48761158a02507f9%3A0x24d74f8999e25bd9:2sHarrow!5e0!3m2!1sen!2suk:4v161399199231215m2!1sen!2suk"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
             </div>
 
             <!-- Right Column -->
             <div class="left-column">
-                <div class="wrapper">
-                    <div class="item item_1">
-                        <h1 style="color: lightblue;">Rent a Bike</h1>
-                        <img src="Images/bicycle.jpeg" alt="Bicycle" style="width: 150px; height: auto;">
-                        <div class="bike_info">
-                            <p>Price:</p>
-                        </div>
-                        <div class="bike_price">
-                            <h3 style="color: lightskyblue;">£2 / 24 hours</h3>
-                        </div>
-                        <div class="bike_button">
-                            <a href="Sign_up_Form.html">Learn More</a>
-                        </div>
-                    </div>
+              <div class="wrapper">
+                <div class="item item_1">
+                  <h1 style="color: lightblue">Rent a Bike</h1>
+                  <img
+                    src="Images/bicycle.jpeg"
+                    alt="Bicycle"
+                    style="width: 150px; height: auto"
+                  />
+                  <div class="bike_info">
+                    <p>Price:</p>
+                  </div>
+                  <div class="bike_price">
+                    <h3 style="color: lightskyblue">£2 / 24 hours</h3>
+                  </div>
+                  <div class="bike_button">
+                    <a href="Sign_up_Form.html">Learn More</a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-
-</body>
-
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
