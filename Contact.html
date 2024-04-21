@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/e3184012e7.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      * {
-        box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-      }
-      p {
-        font-size: 20px;
-        font-family: graphik;
-        color: black;
-      }
 
-      body {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background: linear-gradient(
-          90deg,
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/e3184012e7.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    p {
+      font-size: 20px;
+      font-family: graphik;
+      color: black;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background: linear-gradient(90deg,
           rgba(16, 209, 147, 1) 0%,
           rgba(21, 209, 16, 0.8085609243697479) 50%,
-          rgba(16, 209, 147, 1) 100%
-        );
-        animation: gradient 20s ease infinite;
-        width: 100%;
-        height: 100%;
+          rgba(16, 209, 147, 1) 100%);
+      animation: gradient 20s ease infinite;
+      width: 100%;
+      height: 100%;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
       }
 
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-
-        100% {
-          background-position: 0% 50%;
-        }
+      50% {
+        background-position: 100% 50%;
       }
 
-      .header-action {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3rem;
+      100% {
+        background-position: 0% 50%;
       }
-      .middle-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        margin-bottom: 3rem;
-      }
-      .middle-section h1 {
-        margin-bottom: 0px;
-        font-size: 50px;
-      }
-      .middle-section p {
-        text-align: center;
-      }
+    }
 
-      /* .main {
+    .header-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .middle-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      margin-bottom: 3rem;
+    }
+
+    .middle-section h1 {
+      margin-bottom: 0px;
+      font-size: 50px;
+    }
+
+    .middle-section p {
+      text-align: center;
+    }
+
+    /* .main {
   width: 50%;
   color: black;
   text-align: center;
@@ -80,102 +81,122 @@
   left: 50%;
   transform: translate(-50%, -30%);
 } */
-      .table-wrapper {
-        margin: 10px 20px 20px;
-        box-shadow: 4px 4px 60px 20px rgba(34, 167, 240, 1);
-      }
+    .table-wrapper {
+      margin: 10px 20px 20px;
+      box-shadow: 4px 4px 60px 20px rgba(34, 167, 240, 1);
+    }
+
+    .fl-table {
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: normal;
+      border: none;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 100%;
+      white-space: nowrap;
+      background-color: white;
+    }
+
+    .fl-table td,
+    .fl-table th {
+      text-align: center;
+      padding: 8px;
+    }
+
+    .fl-table td {
+      border-right: 1px solid #f8f8f8;
+      font-size: 18px;
+      color: black;
+    }
+
+    .fl-table thead th {
+      color: #ffffff;
+      background: #4fc3a1;
+    }
+
+    .fl-table thead th:nth-child(odd) {
+      color: #ffffff;
+      background: #324960;
+    }
+
+    .fl-table tr:nth-child(even) {
+      background: #f8f8f8;
+    }
+
+    .icons-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6rem;
+      margin-bottom: 5rem;
+    }
+
+
+    @media screen and (max-width: 900px) {
       .fl-table {
-        border-radius: 5px;
-        font-size: 20px;
-        font-weight: normal;
-        border: none;
-        border-collapse: collapse;
+        white-space: wrap;
+      }
+
+      /*the table container will always have horizontal scrolling enabled, */
+      .table-container {
+        overflow-x: scroll;
+        margin: 10px 20px 20px;
         width: 100%;
-        max-width: 100%;
-        white-space: nowrap;
-        background-color: white;
+        /* Ensure the table container takes up the full width */
       }
 
-      .fl-table td,
-      .fl-table th {
-        text-align: center;
-        padding: 8px;
-      }
-      .fl-table td {
-        border-right: 1px solid #f8f8f8;
-        font-size: 18px;
-        color: black;
-      }
-      .fl-table thead th {
-        color: #ffffff;
-        background: #4fc3a1;
-      }
-      .fl-table thead th:nth-child(odd) {
-        color: #ffffff;
-        background: #324960;
-      }
-      .fl-table tr:nth-child(even) {
-        background: #f8f8f8;
-      }
       .icons-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 6rem;
-        margin-bottom: 5rem;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
       }
-      @media screen and (max-width: 900px) {
-        .fl-table {
-          white-space: wrap;
-        }
-        .icons-container {
-          flex-direction: column;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 1.5rem;
-        }
-        .middle-section h1 {
-          text-align: center;
-          font-size: 30px;
-        }
+
+      .middle-section h1 {
+        text-align: center;
+        font-size: 30px;
       }
-    </style>
-  </head>
-  <body>
-    <div class="container-body">
-      <!-- Navigation bar -->
-      <section id="header">
-        <div class="nav-bar">
-          <nav>
-            <a href="Home.html" class="logo"><b>Harrow Council</b></a>
+    }
+  </style>
+</head>
 
-            <div class="hamburger">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
+<body>
+  <div class="container-body">
+    <!-- Navigation bar -->
+    <section id="header">
+      <div class="nav-bar">
+        <nav>
+          <a href="index.html" class="logo"><b>Harrow Council</b></a>
 
-            <ul class="nav__link hide">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="Explore.html">Ride</a></li>
-              <li><a href="Sign_up_Form.html">Sign up</a></li>
-              <li><a href="Contribute.html">contribute</a></li>
-              <li><a href="AboutPage.html">about</a></li>
-              <li class="last-list"><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-      <!-- End of Navigation bar -->
-      <div class="header-action">
-        <div class="middle-section">
-          <h1><strong>GET IN TOUCH!</strong></h1>
-          <p>
-            If you have any questions, please feel to visit us in our offices
-            distributed throughout the borough. See the table below for further
-            details:
-          </p>
-        </div>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+          <ul class="nav__link hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Explore.html">Ride</a></li>
+            <li><a href="Sign_up_Form.html">Sign up</a></li>
+            <li><a href="Contribute.html">contribute</a></li>
+            <li><a href="AboutPage.html">about</a></li>
+            <li class="last-list"><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- End of Navigation bar -->
+    <div class="header-action">
+      <div class="middle-section">
+        <h1 style="font-size: 1.8rem;"><strong>GET IN TOUCH!</strong></h1>
+        <p style="font-size: 20px;">
+          If you have any questions, please feel to visit us in our offices
+          distributed throughout the borough. See the table below for further
+          details:
+        </p>
+      </div>
+      <div class="table-container">
         <div class="table-wrapper">
           <table class="fl-table">
             <thead>
@@ -220,27 +241,24 @@
             </tbody>
           </table>
         </div>
+      </div>
 
-        <div class="icons-container">
-          <p>
-            <i
-              class="fas fa-envelope"
-              style="font-size: 45px; margin-right: 6rem"
-            >
-              EMAIL</i
-            >
-          </p>
-          <p>
-            <i class="fas fa-phone" style="font-size: 45px; margin-right: 6rem">
-              PHONE</i
-            >
-          </p>
-          <p>
-            <i class="fa fa-walking" style="font-size: 45px"> WALK</i>
-          </p>
-        </div>
+      <div class="icons-container">
+        <p>
+          <i class="fas fa-envelope" style="font-size: 40px; margin-right: 6rem">
+            EMAIL</i>
+        </p>
+        <p>
+          <i class="fas fa-phone" style="font-size: 40px; margin-right: 6rem">
+            PHONE</i>
+        </p>
+        <p>
+          <i class="fa fa-walking" style="font-size: 40px"> WALK</i>
+        </p>
       </div>
     </div>
-    <script src="./js/script.js"></script>
-  </body>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

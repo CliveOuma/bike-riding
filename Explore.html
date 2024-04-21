@@ -1,92 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ride Page</title>
-    <link rel="stylesheet" href="explore.css" />
-  </head>
 
-  <body>
-    <section class="bg-image">
-      <div class="container-body">
-        <!-- Navigation bar -->
-        <section id="header">
-          <div class="nav-bar">
-            <nav>
-              <a href="Home.html" class="logo"><b>Harrow Council</b></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Page</title>
+  <link rel="stylesheet" href="explore.css" />
+</head>
 
-              <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
+<body>
+  <section class="bg-image" id="explore">
+    <div class="container-body">
+      <!-- Navigation bar -->
+      <section id="header">
+        <div class="nav-bar">
+          <nav>
+            <a href="index.html" class="logo"><b>Harrow Council</b></a>
 
-              <ul class="nav__link hide">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Explore.html">Ride</a></li>
-                <li><a href="Sign_up_Form.html">Sign up</a></li>
-                <li><a href="Contribute.html">contribute</a></li>
-                <li><a href="AboutPage.html">about</a></li>
-                <li class="last-list"><a href="contact.html">contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-        <!-- End of Navigation bar -->
-
-        <div class="header-ride">
-          <div class="middle-section">
-            <h1
-              style="
-                font-size: 50px;
-                letter-spacing: 2px;
-                text-shadow: 5px 5px Lightgreen;
-              "
-            >
-              GET RIDING
-            </h1>
-          </div>
-          <div class="container-ride">
-            <!-- Left Column -->
-            <div class="right-column">
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb11m18!1m12:1m3!1d79318.4714571656812d-0.4031427438773469413d51.5920205083182312m311f012f013f0!3m2!11102412176814f13.113n311m2!1s0x48761158a02507f9%3A0x24d74f8999e25bd9:2sHarrow!5e0!3m2!1sen!2suk:4v161399199231215m2!1sen!2suk"
-                  width="100%"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                ></iframe>
-              </div>
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
             </div>
 
-            <!-- Right Column -->
-            <div class="left-column">
-              <div class="wrapper">
-                <div class="item item_1">
-                  <h1 style="color: lightblue">Rent a Bike</h1>
-                  <img
-                    src="Images/bicycle.jpeg"
-                    alt="Bicycle"
-                    style="width: 150px; height: auto"
-                  />
-                  <div class="bike_info">
-                    <p>Price:</p>
-                  </div>
-                  <div class="bike_price">
-                    <h3 style="color: lightskyblue">£2 / 24 hours</h3>
-                  </div>
-                  <div class="bike_button">
-                    <a href="Sign_up_Form.html">Learn More</a>
-                  </div>
+            <ul class="nav__link hide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Explore.html">Ride</a></li>
+              <li><a href="Sign_up_Form.html">Sign up</a></li>
+              <li><a href="Contribute.html">contribute</a></li>
+              <li><a href="AboutPage.html">about</a></li>
+              <li class="last-list"><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- End of Navigation bar -->
+
+      <div class="header-ride">
+        <div class="middle-section">
+          <h1 style="
+                font-size: 2.1rem;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px Lightgreen;
+              ">
+            GET RIDING
+          </h1>
+        </div>
+        <div class="container-ride">
+          <!-- Left Column -->
+          <div class="right-column">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb11m18!1m12:1m3!1d79318.4714571656812d-0.4031427438773469413d51.5920205083182312m311f012f013f0!3m2!11102412176814f13.113n311m2!1s0x48761158a02507f9%3A0x24d74f8999e25bd9:2sHarrow!5e0!3m2!1sen!2suk:4v161399199231215m2!1sen!2suk"
+                width="100%" height="450" style="border: 0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="left-column">
+            <div class="wrapper">
+              <div class="item item_1">
+                <h1 style="color: lightblue">Rent a Bike</h1>
+                <img src="Images/bicycle.jpeg" alt="Bicycle" style="width: 150px; height: auto" />
+                <div class="bike_info">
+                  <p>Price:</p>
+                </div>
+                <div class="bike_price">
+                  <h3 style="color: lightskyblue">£2 / 24 hours</h3>
+                </div>
+                <div class="bike_button">
+                  <a href="Sign_up_Form.html">Learn More</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <script src="./js/script.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

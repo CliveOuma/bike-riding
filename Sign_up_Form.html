@@ -1,161 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sign up Form</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css"/>
-    <style>
-      body {
-        background-image: url(Images/trees.jpeg);
-        /* https://www.pexels.com/photo/close-up-photography-of-leaves-with-droplets-807598/ */
-        background-size: cover;
-      }
 
-      .btn {
-        padding: 6px 10px;
-        font-family: Century Gothic;
-        font-size: large;
-        font-weight: 500;
-        border: none;
-        outline: none;
-        background: white;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-      }
+<head>
+  <title>Sign up Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-image: url(Images/trees.jpeg);
+      /* https://www.pexels.com/photo/close-up-photography-of-leaves-with-droplets-807598/ */
+      background-size: cover;
+    }
 
-      .btn:hover {
-        background: green;
-        color: white;
-      }
+    .btn {
+      padding: 6px 10px;
+      font-family: Century Gothic;
+      font-size: large;
+      font-weight: 500;
+      border: none;
+      outline: none;
+      background: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background: green;
+      color: white;
+    }
+
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4rem;
+    }
+
+    .main-content h1 {
+      flex: 1;
+    }
+
+    .container1 {
+      align-self: flex-start;
+      flex: 1;
+    }
+
+    @media only screen and (max-width: 760px) {
       .main-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 4rem;
+        flex-direction: column;
       }
-      .main-content h1 {
-        flex: 1;
-      }
-      .container1 {
-        align-self: flex-start;
-        flex: 1;
-      }
-      @media only screen and (max-width: 760px) {
-        .main-content {
-          flex-direction: column;
-        }
-      }
-    </style>
-  </head>
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="container-body">
-      <!-- Navigation bar -->
-      <section id="header">
-        <div class="nav-bar">
-          <nav>
-            <a href="Home.html" class="logo"><b>Harrow Council</b></a>
+<body>
+  <div class="container-body">
+    <!-- Navigation bar -->
+    <section id="header">
+      <div class="nav-bar">
+        <nav>
+          <a href="index.html" class="logo"><b>Harrow Council</b></a>
 
-            <div class="hamburger">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+
+          <ul class="nav__link hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Explore.html">Ride</a></li>
+            <li><a href="Sign_up_Form.html">Sign up</a></li>
+            <li><a href="Contribute.html">contribute</a></li>
+            <li><a href="AboutPage.html">about</a></li>
+            <li class="last-list"><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- End of Navigation bar -->
+    <div class="main-content">
+      <h1 style="color: white">
+        Sign up now to get exclusive <br />
+        news straight to your inbox
+      </h1>
+
+      <div class="container1">
+        <div class="title">Sign up</div>
+        <form onsubmit="return ClickMessage()">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"> First Name</span>
+              <input type="text" placeholder="Enter your first name" required />
+            </div>
+            <div class="input-box">
+              <span class="details"> Last Name</span>
+              <input type="text" placeholder="Enter your last name" required />
             </div>
 
-            <ul class="nav__link hide">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="Explore.html">Ride</a></li>
-              <li><a href="Sign_up_Form.html">Sign up</a></li>
-              <li><a href="Contribute.html">contribute</a></li>
-              <li><a href="AboutPage.html">about</a></li>
-              <li class="last-list"><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-      <!-- End of Navigation bar -->
-      <div class="main-content">
-        <h1 style="color: white">
-          Sign up now to get exclusive <br />
-          news straight to your inbox
-        </h1>
-
-        <div class="container1">
-          <div class="title">Sign up</div>
-          <form onsubmit="return ClickMessage()">
-            <div class="user-details">
-              <div class="input-box">
-                <span class="details"> First Name</span>
-                <input
-                  type="text"
-                  placeholder="Enter your first name"
-                  required
-                />
-              </div>
-              <div class="input-box">
-                <span class="details"> Last Name</span>
-                <input
-                  type="text"
-                  placeholder="Enter your last name"
-                  required
-                />
-              </div>
-
-              <div class="input-box">
-                <span class="details"> Phone Number</span>
-                <input
-                  type="text"
-                  placeholder="Enter your phone number"
-                  required
-                />
-              </div>
-              <div class="input-box">
-                <span class="details"> Email Address</span>
-                <input
-                  type="text"
-                  placeholder="Enter your email address"
-                  required
-                />
-              </div>
+            <div class="input-box">
+              <span class="details"> Phone Number</span>
+              <input type="text" placeholder="Enter your phone number" required />
             </div>
+            <div class="input-box">
+              <span class="details"> Email Address</span>
+              <input type="text" placeholder="Enter your email address" required />
+            </div>
+          </div>
 
-            <div class="gender-details">
-              <span class="gender-title">Gender</span>
-              <div class="catagory">
-                <label for="dot-1">
-                  <input type="radio" name="gender" id="dot-1" required />
-                  <span class="gender">Male</span>
-                </label>
-                <label for="dot-1">
-                  <input type="radio" name="gender" id="dot-1" required />
-                  <span class="gender">Female</span>
-                </label>
-                <label for="dot-1">
-                  <input type="radio" name="gender" id="dot-1" required />
-                  <span class="gender">Prefer not to specify</span>
-                </label>
-              </div>
+          <div class="gender-details">
+            <span class="gender-title">Gender</span>
+            <div class="catagory">
+              <label for="dot-1">
+                <input type="radio" name="gender" id="dot-1" required />
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-1">
+                <input type="radio" name="gender" id="dot-1" required />
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-1">
+                <input type="radio" name="gender" id="dot-1" required />
+                <span class="gender">Prefer not to specify</span>
+              </label>
             </div>
-            <br />
-            <div>
-              <button type="submit" class="btn">Sign Up</button>
-            </div>
-          </form>
-        </div>
+          </div>
+          <br />
+          <div>
+            <button type="submit" class="btn">Sign Up</button>
+          </div>
+        </form>
       </div>
     </div>
+  </div>
 
-    <script language="javaScript">
-      function ClickMessage() {
-        var messageHeader = "Sign Up Successful";
-        var messageContent =
-          "You have successfully signed up! Thank you for joining us.";
-        alert(messageHeader + "\n\n" + messageContent);
-        return false; // Prevent form submission
-      }
-    </script>
-    <script src="./js/script.js"></script>
-  </body>
+  <script language="javaScript">
+    function ClickMessage() {
+      var messageHeader = "Sign Up Successful";
+      var messageContent =
+        "You have successfully signed up! Thank you for joining us.";
+      alert(messageHeader + "\n\n" + messageContent);
+      return false; // Prevent form submission
+    }
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
