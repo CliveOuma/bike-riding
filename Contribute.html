@@ -1,156 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contribute</title>
-    <style>
-      .box {
-        width: calc(50% - 20px);
-        max-width: calc(50% - 20px);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribute</title>
+  <style>
+    .box {
+      width: calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    p {
+      font-size: 25px;
+      font-family: graphik;
+    }
+
+    .bg-image {
+      background-image: url(Images/plant.avif);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
       }
 
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .middle-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      margin-bottom: 3rem;
+    }
+
+    .middle-section h1 {
+      margin-bottom: 0px;
+      font-size: 50px;
+    }
+
+    .middle-section p {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 900px) {
       .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-      }
-
-      p {
-        font-size: 25px;
-        font-family: graphik;
-      }
-      .bg-image {
-        background-image: url(Images/plant.avif);
-        background-size: cover;
-        background-position: center;
-        animation: gradient 20s ease infinite;
-        width: 100%;
-        height: 100%;
-      }
-
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-
-        50% {
-          background-position: 100% 50%;
-        }
-
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 3rem;
-      }
-
-      .middle-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-        margin-bottom: 3rem;
-      }
-
-      .middle-section h1 {
-        margin-bottom: 0px;
-        font-size: 50px;
-      }
-
-      .middle-section p {
-        text-align: center;
-      }
-      @media screen and (max-width: 900px) {
-        .card-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-      .box{
+
+      .box {
         max-width: 100%;
         width: 100%;
       }
-      }
-      
-    </style>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <div class="bg-image">
-      <div class="container-body">
-        <!-- Navigation bar -->
-        <section id="header">
-          <div class="nav-bar">
-            <nav>
-              <a href="Home.html" class="logo"><b>Harrow Council</b></a>
+<body>
+  <div class="bg-image">
+    <div class="container-body">
+      <!-- Navigation bar -->
+      <section id="header">
+        <div class="nav-bar">
+          <nav>
+            <a href="index.html" class="logo"><b>Harrow Council</b></a>
 
-              <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
+            <div class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
 
-              <ul class="nav__link hide">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Explore.html">Ride</a></li>
-                <li><a href="Sign_up_Form.html">Sign up</a></li>
-                <li><a href="Contribute.html">contribute</a></li>
-                <li><a href="AboutPage.html">about</a></li>
-                <li class="last-list"><a href="contact.html">contact</a></li>
-              </ul>
-            </nav>
+            <ul class="nav__link hide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Explore.html">Ride</a></li>
+              <li><a href="Sign_up_Form.html">Sign up</a></li>
+              <li><a href="Contribute.html">contribute</a></li>
+              <li><a href="AboutPage.html">about</a></li>
+              <li class="last-list"><a href="contact.html">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- End of Navigation bar -->
+      <div class="header">
+        <div class="middle-section">
+          <h1 style="color: lawngreen;font-size: 2.2rem;"><strong>CONTRIBUTE</strong></h1>
+          <p style="font-size: 20px; color: white">
+            Find out how you can contribute to help save the environment
+          </p>
+        </div>
+
+        <div class="card-container">
+          <div class="box box-recycling">
+            <h2 style="color: blue; font-size: 20px;">Recycling</h2>
+            <p style="color: black;font-size: 20px;">Recycling rates are increasing in the UK, but so is our population.
+              To fulfill demand,
+              we're producing more goods and using more natural resources than ever before, but despite our best
+              efforts, we
+              are still throwing too many things away.</p>
           </div>
-        </section>
-        <!-- End of Navigation bar -->
-        <div class="header">
-          <div class="middle-section">
-            <h1 style="color: lawngreen"><strong>CONTRIBUTE</strong></h1>
-            <p style="font-size: 25px; color: white">
-              Find out how you can contribute to help save the environment
-            </p>
+          <div class="box box-cycle">
+            <h2 style="color: blue;font-size: 20px;">Cycle</h2>
+            <p style="color: black; font-size: 20px;">Cycling is a healthy, low-impact exercise that can be enjoyed by
+              people of all ages,
+              from young children to older adults. It is also fun, cheap, and good for the environment. Riding to work
+              is a
+              great way to get into a routine.</p>
           </div>
+          <div class="box box-solar-panel">
+            <h2 style="color: blue;font-size: 20px;">Solar Panel</h2>
+            <p style="color: black;font-size: 20px;">Solar power is the most abundant energy source on Earth. There's
+              enough solar energy
+              hitting the Earth every hour to meet all of humanity's power needs for an entire year. Every ounce of oil,
+              every lump of coal, and every cubic foot of natural gas could be left in the ground if only we could
+              capture
+              one hour's worth of solar energy each year. That's the scale of the opportunity..</p>
+          </div>
+          <div class="box box-light-bulb">
+            <h2 style="color: blue;font-size: 20px;">Energy Efficient Light Bulb</h2>
+            <p style="color: black;font-size: 20px;">Energy efficiency is all about squeezing out every last bit of
+              power, and not letting
+              any go to waste. So, an energy-saving bulb uses less electricity to emit the same amount of light as a
+              traditional bulb. It's astonishing to know that only 10% of energy used in traditional incandescent bulbs
+              is
+              converted to light. The other 90% is lost as heat.</p>
+          </div>
+        </div>
+        <script src="./js/script.js"></script>
+</body>
 
-    <div class="card-container">
-      <div class="box box-recycling">
-        <h2 style="color: blue; font-size: 20px;">Recycling</h2>
-        <p style="color: black;font-size: 20px;">Recycling rates are increasing in the UK, but so is our population. To fulfill demand,
-          we're producing more goods and using more natural resources than ever before, but despite our best efforts, we
-          are still throwing too many things away.</p>
-      </div>
-      <div class="box box-cycle">
-        <h2 style="color: blue;font-size: 20px;">Cycle</h2>
-        <p style="color: black; font-size: 20px;">Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages,
-          from young children to older adults. It is also fun, cheap, and good for the environment. Riding to work is a
-          great way to get into a routine.</p>
-      </div>
-      <div class="box box-solar-panel">
-        <h2 style="color: blue;font-size: 20px;">Solar Panel</h2>
-        <p style="color: black;font-size: 20px;">Solar power is the most abundant energy source on Earth. There's enough solar energy
-          hitting the Earth every hour to meet all of humanity's power needs for an entire year. Every ounce of oil,
-          every lump of coal, and every cubic foot of natural gas could be left in the ground if only we could capture
-          one hour's worth of solar energy each year. That's the scale of the opportunity..</p>
-      </div>
-      <div class="box box-light-bulb">
-        <h2 style="color: blue;font-size: 20px;">Energy Efficient Light Bulb</h2>
-        <p style="color: black;font-size: 20px;">Energy efficiency is all about squeezing out every last bit of power, and not letting
-          any go to waste. So, an energy-saving bulb uses less electricity to emit the same amount of light as a
-          traditional bulb. It's astonishing to know that only 10% of energy used in traditional incandescent bulbs is
-          converted to light. The other 90% is lost as heat.</p>
-      </div>
-    </div>
-    <script src="./js/script.js"></script>
-  </body>
 </html>
